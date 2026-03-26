@@ -1,65 +1,70 @@
-# Project Overview
-This project aims to provide a comprehensive framework for understanding and implementing system designs in various applications.
+# File System Emulator 🖥️
 
-# Features
-- Modular architecture
-- Easy to extend with new functionalities
-- Comprehensive documentation
+A DOS-style file system emulator with command-line interface, built in C++. This project simulates fundamental file system operations including directory navigation, file creation/deletion, and basic file management.
 
-# Build Instructions
-1. Clone the repository: `git clone https://github.com/fabiouy/FS.git`
-2. Navigate to the project directory: `cd FS`
-3. Run the build command: `build command`
+## 📋 Overview
 
-# Usage Examples
-Here are some examples of how to use each feature:
-1. Example 1: ...
-2. Example 2: ...
+This is an **Operating Systems** educational project that emulates a hierarchical file system similar to DOS. It provides a command-line interface where users can interact with a virtual file system, perform common operations, and understand how operating systems manage files and directories.
 
-# Project Structure
-```
-FS/
-│
-├── src/
-│   ├── main.py
-│   ├── utils.py
-│
-├── tests/
-│   └── test_main.py
-│
-└── README.md
+## ✨ Features
+
+- 📁 **Directory Navigation** - Create, delete, and navigate directories
+- 📄 **File Management** - Create and delete files
+- 🔍 **Directory Listing** - View contents of directories
+- 📍 **Path Management** - Handle absolute and relative paths
+- 💾 **In-Memory Storage** - File system stored in memory
+- 🖱️ **Interactive CLI** - User-friendly command-line interface
+
+## 🛠️ Build Instructions
+
+### Prerequisites
+- C++ Compiler (GCC, Clang, or MSVC)
+- C++17 or later
+
+### Compilation
+
+```bash
+g++ -std=c++17 -Wall -Wextra main.cpp -o fs_emulator
 ```
 
-# Technical Details
-- Language: Python
-- Framework: Flask
+### Running
 
-# Educational Value
-This project helps beginners learn system design by providing a structured approach to solving problems.
+```bash
+./fs_emulator
+```
 
-# Learning Objectives
-- Understanding project modularity
-- Implementing system designs
+## 📖 Usage
 
-# Implementation Notes
-- Ensure compatibility with Python 3.x
+Commands:
+- mkdir <directory> - Create a new directory
+- cd <directory> - Change current directory
+- ls - List directory contents
+- touch <filename> - Create a new file
+- rm <filename> - Delete a file
+- exit - Exit the emulator
 
-# Future Enhancements
-- Add support for database connections
-- Enhance performance with caching
+## 📁 Project Structure
 
-# References
-- [Design Patterns Book](https://example.com)
+- main.cpp - Main program
+- FS.h - File system header
+- README.md - Documentation
 
-# Author Information
-- Name: Fabiouy
-- Email: fabiouy@example.com
+## 🔧 Technical Details
 
-# License
-This project is licensed under the MIT License.
+- Language: C++17
+- Data Structures: Vectors and maps for file/directory management
+- Memory: In-memory file system representation
 
-# Contributing Guidelines
-Please read the CONTRIBUTING.md file for guidelines on how to contribute to this project.
+## 📚 Educational Value
 
-# Support Information
-For support, please open an issue in the GitHub repository.
+Learn about file system architecture and OS concepts.
+
+## 👨‍💼 Author
+
+Fabio Ramirez (fabiouy) - December 2020
+
+## 📄 License
+
+Educational and learning purposes.
+
+Happy Learning! 🎓
